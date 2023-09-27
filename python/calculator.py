@@ -1,4 +1,9 @@
-#building my calculator
+"""
+title: calculator
+purpose: calculate
+author: @arthuryyun
+"""
+
 #setting up the first set of dicts to establish the functions i want to perform later
 def add(x,y):
     return x+y
@@ -49,11 +54,13 @@ def main():
             elif user_input=="subtract":
                 result=subtract(x,y)
                 history.append(f"{x}-{y}={result}")
+        
         #for square root
         elif user_input=="sqrt":
             x = float(input("Enter number for square root: "))
             result = square_root(x)
             history.append(f"sqrt({x})={result}")
+
         print(f"Result: {result}")
 
 if __name__ == "__main__":
